@@ -2,64 +2,66 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Resume</title>
-  
+  <title>Online Responsive Resume Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
+ 
   
 </head>
 
 <body>
-	<div id="w">
-		<header class="fix">
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
 			<div id="info">			
-				<h1>Aishwarya K</h1>
-				<h3>Moblie: 9110495977</h3>
-				<h3>email: aishwaryakengal@gmail.com</h3>
-				<h3>Address: "Belagal Cross Ramanjeneya Nagar Bellary, 583104"</h3>
-				
-			</div>
+				<h1><span itemprop="name">Aishwarya K</span></h1>
+				<small><span itemprop="email">Moblie:9110495977</span></small>
+				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Address: "Belagal Cross Ramanjeneya Nagar Bellary, 583104"</span>				  
+				</small>
+				<small><span itemprop="email">email: aishwaryakengal@gmail.com</span></small>
+					</div>
 			
-			<div id="photo">
-				<img src="i2.jpg" >
-			</div>
+			 <!-- <div id="photo">
+				 <img src="i2.jpg" alt="Jake Rocheleau resume photo avatar" itemprop="image" /> 
+			</div>  -->
 		</header>
-		<hr><br>
+		
 		<section id="profile">
-			<h2>Summary</h2>
-			<p >A Computer Science & Engineering student, a practioner in coding looking for an opportunity in software engineering field that would help to improve my domain, technical skills and dedicate it towards the overall benefit of the organisation.</p>
 			
-			
-		</section><br>
+			<p itemprop="description">A Computer Science & Engineering student, a practioner in coding looking for an opportunity in software engineering field that would help to improve my domain, technical skills and dedicate it towards the overall benefit of the organisation.</p>
+		</section><hr>
+		
+		
+		
 		<section id="education">
-			<h2> Education</h2>
-			<p><b>B.E-Computer Science & Engineering</b><br>Mangalore Institute of Technology & Engineering<span id="space">2017-present</span><span id="space">CGPA:8.4</span> </p>
-			<p><b>Senior Secondary(12<sup>th</sup>)</b><br>Alvas P.U College,Moodbidre<span id="space1">2016-2017</span><span id="space2">Percentage:84%</span> </p>
-			<p><b>Secondary School(SSLC)</b><br>Duddupudi Institute of Learning,Sindhanur<span id="space3">2014-2015</span><span id="space2">Percentage:91.04%</span></p>
-		</section><br>
-		<section id="skills" class="fix" >
-			<h2 >Skillset</h2>
+			<h2>Education</h2>
+			<p><span itemprop="alumniOf">B.E-Computer Science & Engineering</span> ,Mangalore Institute of Technology & Engineering~2017-present.</p>
+			
+			<p><span itemprop="alumniOf">Senior Secondary(12<sup>th</sup>)</span> ,Alvas P.U College,Moodbidre~2016-17.</p>
+			
+			<p><span itemprop="alumniOf">Secondary School(SSLC)</span> ,Duddupudi Institute of Learning,Sindhanur~2014-15.</p>
+		</section>
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
 			<section id="skills-left">
 				<ul>
-					<li ><h4>Languages	: C, C++,  Java</h4></li>
-					<li ><h4 >Database&nbsp;&nbsp;	:sql,oracle</h4></li>
-					<li ><h4 >Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: mysql,eclipse,codeblocks</h4></li>
-					
+					<li itemprop="itemListElement">Languages:C,C++,Java,HTML,CSS</li>
+					<li itemprop="itemListElement">Database:sql,oracle</li>
+					<li itemprop="itemListElement">Tools:mysql,eclipse,codeblocks</li>
 				</ul>
-			</section><br>
-			
-			
-		</section><br>
-		
+			</section>
+		</section>
 		<section id="experience">
 			<h2>Courses &amp; Workshops</h2>
 			<p>Open Source , Mangalore Institute of Technology & Engineering, February 2018.</p>
 			<p>Automation Technology – PLC Certification, Bosch Centre of Competence, MITE</p>
 			<p>Entrepreneurship Awareness Workshop, Mangalore Institute of Tech& Engineering, August 2019.</p>
 			<p>Html &amp; Css , Mangalore Institute of Technology & Engineering, February 2019.</p>
-		</section><br>
+		</section>
 		
 		<section id="articles">
 			<h2>Extra Curricular &AMP; Hobbies </h2>
@@ -67,7 +69,8 @@
 			<p>Member of RED CROSS 2018-19</p>
 			<p>Reading Novels</p>
 			
-		</section><br>
+			
+		</section>
 
 	</div>
 </body>
